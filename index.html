@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ableton - About page</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a href="#main" class="skip-to-content">skip to content</a>
+    <div class="flow-spacer spacer-xl">
+      <header class="text-300">
+        <div class="header__wrapper">
+          <div
+            id="nav-main__wrapper"
+            class="nav-main__wrapper grid text-700 fw-600"
+          >
+            <div class="header__logo-menu flex">
+              <a
+                class="nav-logo__wrapper link-with-svg"
+                href="#"
+                aria-label="Homepage"
+              >
+                <svg
+                  version="1.1"
+                  id="Layer_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 45 21"
+                  enable-background="new 0 0 45 21"
+                  xml:space="preserve"
+                  role="presentation"
+                >
+                  <g>
+                    <rect width="3" height="21"></rect>
+                    <rect x="6" width="3" height="21"></rect>
+                    <rect x="12" width="3" height="21"></rect>
+                    <rect x="18" width="3" height="21"></rect>
+                    <g>
+                      <rect x="24" y="18" width="21" height="3"></rect>
+                      <rect x="24" y="12" width="21" height="3"></rect>
+                      <rect x="24" y="6" width="21" height="3"></rect>
+                      <rect x="24" width="21" height="3"></rect>
+                    </g>
+                  </g>
+                </svg>
+              </a>
+              <button
+                id="nav-menu__toggle"
+                type="button"
+                is="toggle-button"
+                data-modifier="nav-menu-button"
+                class="nav-menu__button toggle-button toggle-button--triangle link-styled-button"
+                aria-controls="nav-main"
+                data-sign="triangle"
+                hidden
+              >
+                Menu
+                <span aria-hidden="true">&#9660;</span>
+              </button>
+            </div>
+            <nav class="nav-main" id="nav-main" aria-label="Main">
+              <ul class="nav-main__list flex flex-rows-media--large">
+                <div
+                  class="flex flex-rows-media--large gap-xs main-links--wrapper"
+                >
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">Live</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">Push</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">Link</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">Shop</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">Packs</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">Help</a>
+                  </li>
+                  <li class="nav-item">
+                    <button
+                      type="button"
+                      is="toggle-button"
+                      aria-controls="nav-more"
+                      aria-label="more from Ableton"
+                      data-sign="plus"
+                      data-modifier="nav-more-button"
+                      class="nav-more__toggle toggle-button toggle-button--plus-minus link-styled-button"
+                      id="nav-more__toggle"
+                      hidden
+                    >
+                      More
+                      <span aria-hidden="true" class="toggle--plus"
+                        >&plus;</span
+                      >
+                      <span aria-hidden="true" class="toggle--minus"
+                        >&minus;</span
+                      >
+                    </button>
+                  </li>
+                </div>
+                <div
+                  class="flex gap flex-rows-media--large login-links--wrapper"
+                >
+                  <!-- <ul> -->
+                  <li class="nav-item">
+                    <a href="#" class="nav-link try-live-link"
+                      >Try Live for free</a
+                    >
+                  </li>
+                  <li class="nav-item text-300">
+                    <a href="#" class="nav-link">Log in or register </a>
+                  </li>
+                  <!-- </ul> -->
+                </div>
+              </ul>
+            </nav>
+            <nav
+              id="nav-more"
+              class="nav-more flow-spacer"
+              aria-label="more from Ableton"
+            >
+              <div class="flow-spacer spacer-xs">
+                <p class="h2">More on Ableton.com:</p>
+                <ul
+                  class="text-300 gap-xs flex-rows-media--large flex nav-more__on-ableton"
+                >
+                  <li><a class="nav-more__link" href="#">Blog</a></li>
+                  <li>
+                    <a class="nav-more__link" href="#"
+                      >Ableton for the Classroom</a
+                    >
+                  </li>
+                  <li>
+                    <a class="nav-more__link" href="#">Ableton for Colleges</a>
+                  </li>
+                  <li>
+                    <a class="nav-more__link" href="#">Certified Training</a>
+                  </li>
+                  <li>
+                    <a class="nav-more__link" aria-current="page" href="#"
+                      >About Ableton</a
+                    >
+                  </li>
+                  <li><a class="nav-more__link" href="#">Jobs</a></li>
+                </ul>
+              </div>
+              <div class="scrollable-nav__wrapper faded  flow-spacer spacer-xs">
+                <p class="h2">More from Ableton:</p>
+                <dl
+                  class="scrollable-nav focus-visible snaps-inline text-300"
+                  tabindex="0"
+                  aria-role="navigation"
+                  aria-label="more from Ableton:"
+                >
+                  <a
+                    class=" nav-more__link--with-description no-underscore"
+                    href="#"
+                  >
+                    <dt class="title-as-link">Loop</dt>
+                    <dd>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Sunt, possimus!
+                    </dd>
+                  </a>
+                  <a
+                    class="nav-more__link--with-description no-underscore"
+                    href="#"
+                  >
+                    <dt class="title-as-link">Learning Music</dt>
+                    <dd>
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Temporibus, fugit.
+                    </dd>
+                  </a>
+                  <a
+                    class="nav-more__link--with-description no-underscore"
+                    href="#"
+                  >
+                    <dt class="title-as-link">Learning Synths</dt>
+                    <dd>
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Incidunt, hic.
+                    </dd>
+                  </a>
+                  <a
+                    class="nav-more__link--with-description no-underscore"
+                    href="#"
+                  >
+                    <dt class="title-as-link">Making Music</dt>
+                    <dd>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </dd>
+                  </a>
+                </dl>
+              </div>
+            </nav>
+          </div>
+          <div class="line-break"></div>
+          <div class="nav-secondary__wrapper">
+            <nav class="fw-600" aria-label="Secondary">
+              <ul class="nav-secondary nav-list flex gap">
+                <li>
+                  <a aria-current="page" href="#" class="nav-link">About</a>
+                </li>
+                <li><a href="#" class="nav-link">Jobs</a></li>
+                <li><a href="#" class="nav-link">Apprenticeship</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="hero--banner ">
+            <svg
+              class="hero--banner__logo"
+              with="430px"
+              height="104px"
+              viewBox="0 0 430 104"
+            >
+              <g fill="#FD5948">
+                <path
+                  d="M32.6204615,65.1749841 L47.5563462,31.7794286 L62.5038077,65.1749841 L32.6204615,65.1749841 L32.6204615,65.1749841 Z M93.8623846,100.13219 C86.5871154,84.2631111 78.9777692,67.7271111 71.3717308,51.1878095 C63.7656923,34.6567619 56.1629615,18.1306667 48.8810769,2.24342857 C48.6313462,1.7944127 48.1550385,1.51873016 47.6076154,1.51873016 C47.0535769,1.51873016 46.5326154,1.80101587 46.2134231,2.27644444 L1.24534615,100.156952 C1.08823077,100.634032 1.13619231,101.121016 1.38923077,101.467683 C1.63565385,101.807746 2.05407692,101.994286 2.57007692,101.994286 L15.2071154,101.994286 C15.6916923,101.994286 16.1431923,101.688889 16.5467308,101.073143 L26.9097308,78.3235556 L68.2145385,78.3235556 L68.2806923,78.4688254 C69.7145769,81.6614603 71.2427308,84.9779048 72.7245769,88.1870476 C74.7009231,92.4791111 76.7483846,96.9147937 78.5924231,101.10946 C78.9777692,101.695492 79.4176923,101.994286 79.9155,101.994286 L92.5459231,101.994286 C93.0635769,101.994286 93.4853077,101.807746 93.7300769,101.467683 C93.9831154,101.116063 94.0310769,100.629079 93.8623846,100.13219 Z M131.990154,91.6751746 C121.000346,91.6751746 115.246615,81.7786667 115.246615,72.0043175 C115.246615,62.6525714 121.117769,52.7147937 131.990154,52.7147937 C142.230769,52.7147937 149.382,60.6468571 149.382,72.0043175 C149.382,81.7968254 144.002038,91.6751746 131.990154,91.6751746 Z M134.6975,40.3420952 C127.597538,40.3420952 121.455154,43.0840635 116.445654,48.4970159 L116.020615,48.9559365 L116.020615,2.52571429 C116.020615,2.01066667 115.349154,1.35860317 114.595,1.35860317 L103.375308,1.35860317 C102.616192,1.35860317 101.941423,2.01066667 101.941423,2.52571429 L101.941423,100.698413 C101.941423,101.428063 102.573192,101.994286 103.375308,101.994286 L114.461038,101.994286 C115.264808,101.994286 115.891615,101.428063 115.891615,100.698413 L115.891615,95.463746 L116.315,95.896254 C121.284808,101.000508 127.802615,103.924063 134.186462,103.924063 C154.034269,103.924063 163.070885,87.247746 163.070885,71.7484444 C163.070885,56.5215238 153.127962,40.3420952 134.6975,40.3420952 Z M184.660192,1.35860317 L173.574462,1.35860317 C172.815346,1.35860317 172.142231,2.01066667 172.142231,2.52571429 L172.142231,100.698413 C172.142231,101.428063 172.770692,101.994286 173.574462,101.994286 L184.660192,101.994286 C185.287,101.994286 185.958462,101.475937 185.958462,100.698413 L185.958462,2.52571429 C185.958462,2.03542857 185.305192,1.35860317 184.660192,1.35860317 Z M210.465154,65.1749841 L210.554462,64.8629841 C212.320769,58.6989206 217.836346,52.4589206 224.966077,52.4589206 C232.990538,52.4589206 237.609731,58.8673016 239.255308,64.8629841 L239.338,65.1749841 L210.465154,65.1749841 Z M224.966077,40.3420952 C206.912692,40.3420952 195.702923,52.6702222 195.702923,72.5210159 C195.702923,91.0099048 207.843808,103.924063 225.230692,103.924063 C236.9945,103.924063 246.973808,97.9250794 252.600192,87.4606984 L252.694462,87.2791111 C252.754,86.8631111 252.492692,86.4421587 251.887385,85.9617778 L242.510077,80.7106032 C241.805538,80.3078095 241.266385,80.3936508 240.761962,81.0308571 C237.024269,87.0546032 233.503231,91.6751746 225.354731,91.6751746 C216.546346,91.6751746 210.179038,85.7950476 209.515846,77.0408889 L209.494346,76.7784127 L252.041192,76.7784127 C252.730846,76.7784127 253.471769,76.4119365 253.471769,75.6063492 L253.471769,73.8102857 C253.471769,58.3704127 246.009615,40.3420952 224.966077,40.3420952 Z M297.834538,42.1398095 L284.053038,42.1398095 L284.053038,26.4539683 C284.053038,25.7325714 283.555231,25.2868571 282.7465,25.2868571 L271.665731,25.2868571 C270.954577,25.2868571 270.235154,25.6450794 270.235154,26.4539683 L270.235154,33.0208254 C270.235154,35.9790476 270.235154,42.1398095 261.997346,42.1398095 L259.677,42.1398095 C258.917885,42.1398095 258.243115,42.7951746 258.243115,43.3151746 L258.243115,53.7366349 C258.243115,54.7023492 259.339615,54.7749841 259.677,54.7749841 L270.235154,54.7749841 L270.235154,80.0651429 C270.235154,96.3188571 276.301462,103.884444 289.327154,103.884444 C293.114462,103.884444 296.132731,103.427175 298.304231,102.519238 L298.297615,102.469714 C298.816923,102.369016 299.261808,101.707048 299.261808,101.424762 L299.261808,90.4915556 C299.261808,89.8543492 298.608538,89.3161905 297.834538,89.3161905 C297.555038,89.3161905 297.062192,89.487873 296.891846,89.5572063 C295.315731,90.1828571 293.688346,90.8349206 291.351462,90.8349206 C290.818923,90.8349206 290.258269,90.8019048 289.682731,90.7325714 C283.998462,89.4697143 284.031538,82.0097778 284.053038,77.0755556 L284.053038,54.7749841 L297.834538,54.7749841 C298.168615,54.7749841 299.261808,54.7023492 299.261808,53.7366349 L299.261808,43.3151746 C299.261808,42.7951746 298.588692,42.1398095 297.834538,42.1398095 Z M337.118346,90.9092063 C327.102654,90.9092063 318.954154,82.4819048 318.954154,72.1297778 C318.954154,61.8552381 327.102654,53.4906667 337.118346,53.4906667 C347.272962,53.4906667 355.538885,61.8552381 355.538885,72.1297778 C355.538885,82.4819048 347.272962,90.9092063 337.118346,90.9092063 Z M337.118346,40.3420952 C319.112923,40.3420952 305.010577,54.3028571 305.010577,72.1297778 C305.010577,89.9583492 319.112923,103.924063 337.118346,103.924063 C355.123769,103.924063 369.227769,89.9583492 369.227769,72.1297778 C369.227769,54.3028571 355.123769,40.3420952 337.118346,40.3420952 Z M407.623462,40.3420952 C401.669615,40.3420952 395.856346,42.6697143 392.075654,46.5721905 L391.680385,46.9815873 L391.529885,43.3168254 C391.529885,42.791873 390.855115,42.1398095 390.092692,42.1398095 L379.008615,42.1398095 C378.2495,42.1398095 377.578038,42.791873 377.578038,43.3069206 L377.578038,100.698413 C377.578038,101.428063 378.2065,101.994286 379.008615,101.994286 L390.092692,101.994286 C390.898115,101.994286 391.529885,101.428063 391.529885,100.698413 L391.529885,74.4507937 C391.529885,64.7688889 391.529885,52.7180952 404.272769,52.7180952 C414.749885,52.7180952 415.603269,59.5886984 415.603269,67.8905397 L415.603269,100.698413 C415.603269,101.428063 416.231731,101.994286 417.032192,101.994286 L428.121231,101.994286 C428.888615,101.994286 429.422808,101.464381 429.422808,100.698413 L429.422808,66.4708571 C429.422808,48.399619 422.699923,40.3420952 407.623462,40.3420952 Z"
+                  id="Fill-9"
+                  sketch:type="MSShapeGroup"
+                ></path>
+              </g>
+            </svg>
+          </div>
+        </div>
+      </header>
+
+      <main id="main">
+        <div class="container flow-spacer spacer-xl">
+          <div class="section--info text-max-length flow-spacer">
+            <h1>
+              We make <a href="#">Live</a>, <a href="#">Push</a> and
+              <a href="#">Link</a> — unique software and hardware for music
+              creation and performance. With these products, our community of
+              users creates amazing things.
+            </h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam
+              nisi, adipisci impedit odit commodi molestias harum eligendi
+              pariatur incidunt recusandae eius nostrum nam libero, odio dolore
+              autem qui molestiae voluptate.
+            </p>
+          </div>
+          <div
+            class="section--banner section--banner--with-bg grid--2-col grid"
+          >
+            <div
+              class="bg--yellow section--banner__bg-container bg--right-side"
+            ></div>
+            <div class="">
+              <img
+                src="img/about-photo1.jpg"
+                alt="woman working with music mixer from Ableton"
+                class="section--banner--img"
+              />
+            </div>
+            <div class="grid space--left">
+              <img
+                src="img/about-photo2.jpg"
+                alt="a woman passing ahead of Ableton posters in the office."
+                class="section--banner--img"
+              />
+            </div>
+          </div>
+          <div class="section--info text-max-length flow-spacer">
+            <h2>
+              Making music isn’t easy. It takes time, effort, and learning. But
+              when you’re in the flow, it’s incredibly rewarding.
+            </h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+              odio omnis nemo quos ipsa blanditiis, tempora sapiente non
+              distinctio repellendus, assumenda iure. Dolor repellat provident
+              dignissimos ducimus consequatur qui maiores?
+            </p>
+          </div>
+
+          <div class="section--media text-max-length">
+            <iframe
+              class="iframe--why-ableton"
+              src="https://www.youtube.com/embed/9SbnhgjeyXA"
+              title="Why Ableton - Juanpe Bolivar"
+              frameborder="0"
+              allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            >
+            </iframe>
+            <p class="iframe--description fw-600">
+              Why Ableton - Juanpe Bolivar
+            </p>
+          </div>
+          <div class="section--info text-max-length flow-spacer">
+            <h2>
+              We are more than 350 people from 30 different countries divided
+              between our headquarters in Berlin and our offices in Los Angeles
+              and Tokyo.
+            </h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
+              doloremque tempora quis voluptatem ipsa repudiandae nemo quo et
+              saepe error.
+            </p>
+          </div>
+          <div
+            class="section--banner section--banner--with-bg grid--2-col grid"
+          >
+            <div
+              class="section--banner__bg-container bg--green bg--left-side"
+            ></div>
+            <div class="grid space--right space--between">
+              <img
+                src="img/about-photo3.jpg"
+                alt="a woman looking at a man passionately writing something on the desk."
+                class="section--banner--img"
+              /><img
+                src="img/about-photo4.jpg"
+                alt="banner with Ableton address."
+                class="section--banner--img"
+              />
+            </div>
+            <div class="">
+              <img
+                src="img/about-photo5.jpg"
+                alt="man and a woman creating music at their office with lots of professional instruments from Ableton."
+                class="section--banner--img"
+              />
+            </div>
+          </div>
+          <div class="section--info text-max-length flow-spacer">
+            <h2>
+              We believe it takes focus to create truly outstanding instruments.
+              We only work on a few products and we strive to make them great.
+            </h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
+              asperiores, consectetur tenetur voluptates inventore cumque odio
+              quidem perspiciatis, ea omnis ipsa nemo dicta enim. Adipisci
+              repellendus a ducimus labore veritatis! Nesciunt fugiat iste unde
+              qui molestiae incidunt. Fugiat, eaque nemo.
+            </p>
+          </div>
+          <div class="section--banner">
+            <img
+              src="img/poster-meet-the-makers.webp"
+              alt="a person editing music on a computer with lots of code and graphs"
+              class="section-banner--img"
+            />
+          </div>
+          <div class="section--info text-max-length flow-spacer">
+            <h2>
+              We’re passionate about what we do, but we’re equally passionate
+              about improving who we are.
+            </h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
+              illo distinctio officiis doloremque repellendus, at quidem neque
+              accusamus nesciunt consequatur?
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo autem
+              fugiat itaque eius incidunt voluptate nam quibusdam, amet nobis
+              ullam, rem tempore provident in sunt expedita, alias impedit.
+              Esse, molestiae?
+            </p>
+          </div>
+          <div
+            class="section--banner section--banner--with-bg grid--2-col grid"
+          >
+            <div
+              class="section--banner__bg-container bg--purple bg--center"
+            ></div>
+            <div class="grid space--right">
+              <img
+                src="img/about-photo6.jpg"
+                alt="women working behind their desks"
+                class="section--banner--img"
+              />
+            </div>
+            <div class="">
+              <img
+                src="img/about-photo7.jpg"
+                alt="slide presentation at Ableton office."
+                class="section--banner--img right-border"
+              />
+            </div>
+          </div>
+          <div class="section--info text-max-length flow-spacer">
+            <h2>
+              We want our employees to love it here. Since we’re looking for
+              exceptional talent from around the world, we will do everything we
+              can to make your transition as easy as possible.
+            </h2>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque
+              repellat obcaecati, nulla explicabo laudantium quos ratione libero
+              reiciendis esse laboriosam voluptates minus porro culpa at
+              nostrum, unde adipisci repudiandae, ullam pariatur officia maxime
+              officiis excepturi! Reiciendis, quidem dolore exercitationem iusto
+              tempore minima labore vero beatae nesciunt vel distinctio alias
+              natus rerum optio veritatis expedita harum voluptatibus in
+              quibusdam atque. Enim.
+            </p>
+          </div>
+          <div class="section--banner section--banner--join-us bg--blue-400">
+            <div class="">
+              <img
+                src="img/about-photo8.jpg"
+                alt="women working behind their desks"
+                class="section--banner--img"
+              />
+            </div>
+            <div class="card">
+              <div class="flow-spacer text-max-length">
+                <h2>
+                  We’re really proud of the work we’ve done so far. But there’s
+                  so much more to come. If you’d like to be a part of it, please
+                  join us.
+                </h2>
+                <a
+                  href="#"
+                  class="section--banner--join-us link-with-arrow fw-600 text-700"
+                  >See latest jobs</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <div class="line-break"></div>
+
+      <footer class="text-400">
+        <div class="container flow-spacer spacer-xl">
+          <div>
+            <img
+              src="img/ableton-text.svg"
+              alt="ableton"
+              class="footer-logo--text"
+            />
+          </div>
+          <div class="flow-spacer spacer-xl">
+            <div class="flex flex-rows-media--large gap-xl">
+              <div class="footer__form-wrapper">
+                <form
+                  action="#"
+                  class="footer__form flow-spacer text-max-length"
+                >
+                  <div>
+                    <h2>
+                      <label for="signup-email" class="fw-600"
+                        >Sign up to our newsletter</label
+                      >
+                    </h2>
+                    <p>
+                      Enter your email address to stay up to date with the
+                      latest offers, tutorials, downloads, surveys and more.
+                    </p>
+                  </div>
+                  <div class="footer__form__inputs flex">
+                    <input
+                      name="email"
+                      placeholder="Email Address"
+                      id="signup-email"
+                      type="email"
+                      required
+                      class="input-field"
+                    />
+                    <input
+                      class="sign-up-button fw-600"
+                      type="submit"
+                      value="Sign up"
+                    />
+                  </div>
+                </form>
+              </div>
+              <div class="flow-spacer">
+                <ul class="footer__links">
+                  <li>
+                    <a href="#" class="link-with-arrow title-as-link"
+                      >Register Live or Push</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="link-with-arrow title-as-link"
+                      aria-current="page"
+                      >About</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="link-with-arrow title-as-link">Jobs</a>
+                  </li>
+                </ul>
+                <ul class="footer__social flex">
+                  <li>
+                    <a
+                      class="footer__social-button--facebook link-with-svg"
+                      href="http://facebook.com/ableton"
+                      aria-label="our facebook"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 40 40"
+                        role="img"
+                        focusable="false"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M33.334 20a13.333 13.333 0 10-15.417 13.167v-9.312h-3.385V20h3.385v-2.933c0-3.342 1.991-5.187 5.036-5.187a20.5 20.5 0 012.985.26v3.277h-1.681a1.927 1.927 0 00-2.173 2.082v2.5h3.7l-.591 3.854h-3.109v9.314A13.337 13.337 0 0033.334 20z"
+                          fill="#fff"
+                        ></path>
+                        <path
+                          d="M25.19 23.854L25.781 20h-3.7v-2.5a1.927 1.927 0 012.173-2.082h1.681v-3.283a20.5 20.5 0 00-2.985-.26c-3.046 0-5.036 1.846-5.036 5.188v2.938h-3.383v3.854h3.385v9.32a13.473 13.473 0 004.167 0v-9.317z"
+                          fill="#3477f2"
+                        ></path></svg
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      class="footer__social-button--twitter link-with-svg"
+                      href="http://twitter.com/ableton"
+                      aria-label="our twitter"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 40 40"
+                        role="img"
+                        aria-hidden="true"
+                        focusable="false"
+                      >
+                        <path
+                          d="M15.362 30.159a14.5 14.5 0 0014.594-14.594c0-.222 0-.443-.015-.663a10.436 10.436 0 002.559-2.655 10.238 10.238 0 01-2.946.807 5.147 5.147 0 002.255-2.837 10.279 10.279 0 01-3.257 1.245 5.134 5.134 0 00-8.741 4.678A14.562 14.562 0 019.24 10.781a5.133 5.133 0 001.588 6.847 5.091 5.091 0 01-2.328-.642v.065a5.131 5.131 0 004.115 5.028 5.121 5.121 0 01-2.316.088 5.135 5.135 0 004.792 3.562 10.292 10.292 0 01-6.37 2.2 10.441 10.441 0 01-1.221-.074 14.521 14.521 0 007.862 2.3"
+                          fill="#fff"
+                        ></path></svg
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      class="footer__social-button--youtube link-with-svg"
+                      href="http://youtube.com/ableton"
+                      aria-label="our youtube"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 40 40"
+                        role="img"
+                        focusable="false"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M32.776 13.601a3.351 3.351 0 00-2.358-2.373C28.339 10.667 20 10.667 20 10.667s-8.339 0-10.418.561a3.351 3.351 0 00-2.358 2.373 35.146 35.146 0 00-.557 6.46 35.146 35.146 0 00.557 6.46 3.351 3.351 0 002.358 2.373c2.08.561 10.418.561 10.418.561s8.339 0 10.418-.561a3.351 3.351 0 002.358-2.373 35.146 35.146 0 00.557-6.46 35.146 35.146 0 00-.557-6.46z"
+                          fill="#fff"
+                        ></path>
+                        <path
+                          d="M17.273 24.025l6.97-3.961-6.97-3.969z"
+                          fill="#ff001d"
+                        ></path></svg
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      class="footer__social-button--instagram link-with-svg"
+                      href="http://instagram.com/ableton"
+                      aria-label=" our instagram"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 40 40"
+                        role="img"
+                        focusable="false"
+                        aria-hidden="true"
+                      >
+                        <g transform="translate(-336 -285)">
+                          <path
+                            d="M356 294.069c3.56 0 3.982.014 5.388.078a7.38 7.38 0 012.476.459 4.416 4.416 0 012.53 2.53 7.38 7.38 0 01.459 2.476c.064 1.406.078 1.828.078 5.388s-.014 3.982-.078 5.388a7.38 7.38 0 01-.459 2.476 4.416 4.416 0 01-2.53 2.53 7.38 7.38 0 01-2.476.459c-1.406.064-1.827.078-5.388.078s-3.982-.014-5.388-.078a7.38 7.38 0 01-2.476-.459 4.416 4.416 0 01-2.53-2.53 7.38 7.38 0 01-.459-2.476c-.064-1.406-.078-1.828-.078-5.388s.014-3.982.078-5.388a7.38 7.38 0 01.459-2.476 4.416 4.416 0 012.53-2.53 7.38 7.38 0 012.476-.459c1.406-.064 1.828-.078 5.388-.078m0-2.4c-3.621 0-4.075.015-5.5.08a9.787 9.787 0 00-3.237.62 6.818 6.818 0 00-3.9 3.9 9.787 9.787 0 00-.62 3.237c-.065 1.422-.08 1.876-.08 5.5s.015 4.075.08 5.5a9.787 9.787 0 00.62 3.237 6.818 6.818 0 003.9 3.9 9.787 9.787 0 003.237.62c1.422.065 1.876.08 5.5.08s4.075-.015 5.5-.08a9.787 9.787 0 003.237-.62 6.818 6.818 0 003.9-3.9 9.787 9.787 0 00.62-3.237c.065-1.422.08-1.876.08-5.5s-.015-4.075-.08-5.5a9.787 9.787 0 00-.62-3.237 6.818 6.818 0 00-3.9-3.9 9.787 9.787 0 00-3.237-.62c-1.422-.065-1.876-.08-5.5-.08z"
+                            fill="#fff"
+                          ></path>
+                          <path
+                            d="M356 298.153a6.847 6.847 0 106.847 6.847 6.847 6.847 0 00-6.847-6.847zm0 11.291a4.444 4.444 0 114.444-4.444 4.444 4.444 0 01-4.444 4.444z"
+                            fill="#fff"
+                          ></path>
+                          <circle
+                            cx="1.6"
+                            cy="1.6"
+                            r="1.6"
+                            transform="translate(361.517 296.283)"
+                            fill="#fff"
+                          ></circle>
+                        </g></svg
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="flex flex-rows-media--large gap-xl">
+              <div>
+                <h2>Education</h2>
+                <ul class="footer__links">
+                  <li>
+                    <a href="#" class="link-with-arrow title-as-link">Offers</a>
+                  </li>
+                  <li>
+                    <a href="#" class="link-with-arrow title-as-link"
+                      >Classroom</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="link-with-arrow title-as-link"
+                      >Colleges</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h2>Community</h2>
+                <ul class="footer__links">
+                  <li>
+                    <a href="#" class="link-with-arrow title-as-link"
+                      >User Groups</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="link-with-arrow title-as-link"
+                      >Training</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="link-with-arrow title-as-link"
+                      >Become trainer</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h2>Distributors</h2>
+                <ul class="footer__links">
+                  <li>
+                    <a href="#" class="link-with-arrow title-as-link"
+                      >Find Distributors</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="link-with-arrow title-as-link"
+                      >Push in-store</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="//unpkg.com/@ungap/custom-elements/es.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

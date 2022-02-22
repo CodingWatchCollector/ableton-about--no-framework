@@ -2,15 +2,10 @@
 1. refactor links, images, fonts loading, etc. if using NextJS/Gatsby
 */
 
-@font-face {
-  font-family: Mulish;
-  src: url('/ableton/Mulish-VariableFont_wght.ttf') format('truetype');
-  font-weight: 200 900;
-  font-style: normal;
-}
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap');
 
 :root {
-  --ff-sans: Mulish, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu,
+  --ff-sans: 'Nunito Sans', system-ui, -apple-system, Segoe UI, Roboto, Ubuntu,
     Cantarell, Noto Sans, sans-serif;
 
   /* mobile font-size  */
@@ -171,7 +166,7 @@ h2,
 h3,
 .h3 {
   font-size: var(--fs-700);
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .text-300 {
@@ -191,7 +186,7 @@ h3,
 }
 
 .fw-600 {
-  font-weight: 600;
+  font-weight: 700;
 }
 
 a {
@@ -347,7 +342,7 @@ a.is-active:focus {
   background-color: white;
   padding: 1em;
   font-size: var(--fs-700);
-  font-weight: 600;
+  font-weight: 700;
   position: absolute;
   left: 0;
   top: 0;

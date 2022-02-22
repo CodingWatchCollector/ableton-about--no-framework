@@ -13,14 +13,14 @@
   --fs-400: 1rem;
   --fs-700: 1.25rem;
 
-  --yellow-400: #fbffa7;
-  --orange-400: #ff764d;
-  --green-400: #b6ffc0;
-  --blue-400: #b1c5ff;
-  --blue-700: #0000ff;
-  --purple-400: #d5b3ff;
+  --clr--accent-400: #ff764d;
+  --clr--blue-700: #0000ff;
+  --bg--yellow-400: #fbffa7;
+  --bg--green-400: #b6ffc0;
+  --bg--purple-400: #d5b3ff;
+  --bg--blue-400: #b1c5ff;
 
-  --link-aria-current: var(--orange-400);
+  --link-aria-current: var(--clr--accent-400);
 
   --spacer: 1rem;
   --spacer-xs: 0.5rem;
@@ -190,17 +190,19 @@ h3,
 }
 
 a {
-  color: var(--blue-700);
+  color: var(--clr--blue-700);
   text-decoration: none;
 }
 
 a,
+.sign-up-button,
+.input-field,
 .link-styled-button,
 .title-as-link {
   background-image: linear-gradient(
     90deg,
-    var(--orange-400),
-    var(--orange-400)
+    var(--clr--accent-400),
+    var(--clr--accent-400)
   );
   background-size: 0% 3px;
   background-repeat: no-repeat;
@@ -214,6 +216,8 @@ a,
 }
 
 a:hover,
+.sign-up-button:hover,
+.input-field:hover,
 .link-styled-button:hover,
 .nav-more__link--with-description:hover > .title-as-link {
   background-size: 100% 3px;
@@ -312,23 +316,23 @@ a.is-active:focus {
 }
 
 .bg--yellow {
-  background-color: var(--yellow-400);
+  background-color: var(--bg--yellow-400);
 }
 
 .bg--green {
-  background-color: var(--green-400);
+  background-color: var(--bg--green-400);
 }
 
 .bg--purple {
-  background-color: var(--purple-400);
+  background-color: var(--bg--purple-400);
 }
 
 .bg--blue-400 {
-  background-color: var(--blue-400);
+  background-color: var(--bg--blue-400);
 }
 
 .bg--blue-700 {
-  background-color: var(--blue-700);
+  background-color: var(--clr--blue-700);
 }
 
 .line-break {
@@ -342,7 +346,7 @@ a.is-active:focus {
 /* skip to content button */
 .skip-to-content {
   font-size: var(--fs-700);
-  color: var(--orange-400);
+  color: var(--clr--accent-400);
   background-color: white;
   padding: 1em;
   font-size: var(--fs-700);
@@ -453,7 +457,6 @@ header .nav-menu__button {
 
 .header__wrapper {
   flex-direction: column;
-  position: relative;
 }
 
 /* main navigation grid */
@@ -537,7 +540,7 @@ header .nav-menu__button {
   right: 0;
   color: white;
   fill: white;
-  background-color: var(--blue-700);
+  background-color: var(--clr--blue-700);
 }
 
 @media (min-width: 65em) {
@@ -583,13 +586,18 @@ header :is(.nav-link, .nav-more__link, .link-styled-button) {
     padding: 0.2rem 0.5em;
   }
 
+  /* no left padding on the first link in a row to keep the alignment */
+  header li:first-of-type :is(.nav-link, .nav-more__link, .link-styled-button) {
+    padding-left: 0;
+  }
+
   .login-links--wrapper {
     align-items: baseline;
     gap: var(--spacer-xs);
   }
 
   .try-live-link {
-    color: var(--blue-700);
+    color: var(--clr--blue-700);
   }
 }
 
@@ -619,7 +627,7 @@ header :is(.nav-link, .nav-more__link, .link-styled-button) {
 @media (min-width: 65em) {
   .nav-more__toggle {
     display: block;
-    color: var(--orange-400);
+    color: var(--clr--accent-400);
   }
 
   .nav-main.hide + .nav-more {
@@ -660,7 +668,11 @@ header :is(.nav-link, .nav-more__link, .link-styled-button) {
   right: 0;
   left: 85%;
   z-index: 10;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0), var(--blue-700));
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0),
+    var(--clr--blue-700)
+  );
   pointer-events: none;
 }
 
@@ -825,18 +837,14 @@ footer a {
 }
 
 .input-field {
-  background: #eee;
+  background-color: #eee;
   width: 100%;
   max-width: 35rem;
 }
 
 .sign-up-button {
   color: white;
-  background-color: var(--blue-700);
-}
-
-.sign-up-button:hover {
-  opacity: 0.75;
+  background-color: var(--clr--blue-700);
 }
 
 .sign-up-button:focus,
@@ -866,7 +874,12 @@ footer a {
 }
 .footer__social-button--instagram {
   background-color: #f77737;
-  background-image: linear-gradient(90deg, var(--blue-700), var(--blue-700));
+  /* change background gradient to blue to make it visible on hover */
+  background-image: linear-gradient(
+    90deg,
+    var(--clr--blue-700),
+    var(--clr--blue-700)
+  );
 }
 
 /* END FOOTER  */

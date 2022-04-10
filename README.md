@@ -4,10 +4,14 @@ Page loading isn't blazing fast cause i'm not using different filesizes for imag
 # Main reason to copy this page:
 - Solidify my CSS Grid knowledge
 - Build a complex page using WCAG recommendations
+- I like the design and I wanted to recreate it
+
 ## What was done:
 - Create responsive dropdown navigation using no scripts/libraries
-- 
+- use accessibility recommendations (aria-expanded on menu button, alt text, 
 
-## My personal touch:
-- Fix heading hierarchy of the original site where every section has a H1 
+## My personal touch and some fixes of the original page:
+- Fix heading hierarchy of the original page where every section has a H1(what?!) 
+- Skip to content button (10+ tabs before you skip the navigation links) 
+- focus state on links (doesn't exist on original page)
 - 

@@ -62,8 +62,11 @@
 }
 
 *:focus {
+  outline-offset: 1px;
   outline-width: 2px;
+  outline-color: blue;
   outline-color: invert;
+  outline-style: solid;
 }
 
 html {
@@ -352,15 +355,15 @@ a.is-active:focus {
   font-size: var(--fs-700);
   font-weight: 700;
   position: absolute;
-  left: 0;
+  left: 50%;
   top: 0;
-  transform: translate(0, -100%);
+  transform: translate(-50%, -100%);
   transition: transform var(--transition-duration) ease-out;
   z-index: 1000;
 }
 
 .skip-to-content:focus {
-  transform: translate(0, 0%);
+  transform: translate(-50%, 0%);
 }
 
 :where(.link-styled-button) {

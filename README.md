@@ -8,10 +8,10 @@ Page loading isn't blazing fast cause i'm not using different filesizes for imag
 
 ## What was done:
 - Create responsive dropdown navigation using no scripts/libraries
-- use accessibility recommendations (aria-expanded on menu button, alt text, 
+- use accessibility recommendations (aria-expanded on menu button, alt text, different hover and focus state on links, contrast requirements on placeholders, input labels)
 
 ## My personal touch and some fixes of the original page:
 - Fix heading hierarchy of the original page where every section has a H1(what?!) 
 - Skip to content button (10+ tabs before you skip the navigation links) 
-- focus state on links (doesn't exist on original page)
-- 
+- hover state on links (doesn't exist on original page)
+- alt text

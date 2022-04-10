@@ -354,13 +354,13 @@ a.is-active:focus {
   position: absolute;
   left: 0;
   top: 0;
-  transform: translate(0, -100%);
+  transform: translate(-50%, -100%);
   transition: transform var(--transition-duration) ease-out;
   z-index: 1000;
 }
 
 .skip-to-content:focus {
-  transform: translate(0, 0%);
+  transform: translate(-50%, 0%);
 }
 
 :where(.link-styled-button) {

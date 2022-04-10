@@ -352,7 +352,7 @@ a.is-active:focus {
   font-size: var(--fs-700);
   font-weight: 700;
   position: absolute;
-  left: 0;
+  left: 50%;
   top: 0;
   transform: translate(-50%, -100%);
   transition: transform var(--transition-duration) ease-out;

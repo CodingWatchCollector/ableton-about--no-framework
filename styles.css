@@ -64,8 +64,7 @@
 *:focus {
   outline-offset: 1px;
   outline-width: 2px;
-  outline-color: blue;
-  outline-color: invert;
+  outline-color: currentColor;
   outline-style: solid;
 }
 
@@ -139,6 +138,16 @@ iframe {
 
 [hidden] {
   display: none;
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
 }
 
 body {
@@ -708,10 +717,31 @@ header :is(.nav-link, .nav-more__link, .link-styled-button) {
 .hero--banner {
   position: relative;
   min-height: 85vh;
-  background-image: url(img/header1.avif);
+  background-image: url(img/small/header.jpg);
+  background-image: image-set(
+    url(img/small/header.jpg) 1x,
+    url(img/medium/header.jpg) 2x    
+    );
+  background-image: -webkit-image-set(
+    url(img/small/header.jpg) 1x,
+    url(img/medium/header.jpg) 2x    
+    );
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+@media (min-width: 65em) {
+  .hero--banner {
+    background-image: image-set(
+      url(img/medium/header.jpg) 1x,    
+      url(img/large/header.jpg) 2x
+    );
+    background-image: -webkit-image-set(
+      url(img/medium/header.jpg) 1x,    
+      url(img/large/header.jpg) 2x
+    );
+  }
 }
 
 .hero--banner__logo {
@@ -791,7 +821,6 @@ header :is(.nav-link, .nav-more__link, .link-styled-button) {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: 40% center;
   }
 }
 .card {
@@ -848,6 +877,7 @@ footer a {
 .sign-up-button {
   color: white;
   background-color: var(--clr--blue-700);
+  outline-color: blue;
 }
 
 .sign-up-button:focus,

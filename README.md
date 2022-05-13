@@ -1,5 +1,5 @@
 This is a copy of **Ableton's about page** using only HTML, CSS and vanilla JS (to hide/show the navigation with buttons).
-Page loading isn't blazing fast cause i'm not using different filesizes for images. I'm counting on frameworks (NextJS or Gatsby) to do this job when i'll add this project to my portfolio.
+Page loading ~isn't blazing fast cause i'm not using different filesizes for images. I'm counting on frameworks (NextJS or Gatsby) to do this job when i'll add this project to my portfolio~ is good, I'm using `srcset` for both HTML and CSS `<img>` and even a `<picture>` element.
 
 # Main reason to copy this page:
 - Solidify my CSS Grid knowledge

@@ -1,6 +1,10 @@
 This is a copy of **Ableton's about page** using only HTML, CSS and vanilla JS (to hide/show the navigation with buttons).
 Page loading ~isn't blazing fast cause i'm not using different filesizes for images. I'm counting on frameworks (NextJS or Gatsby) to do this job when i'll add this project to my portfolio~ is good, I'm using `image-set` for `background-image` in CSS, `srcset` for `<img>` element in HTML and `<picture>` element.
 
+[Preview link](https://ableton-about-page.netlify.app/)
+
+[Link to original Ableton site](https://www.ableton.com/en/about/)
+
 # Main reason to copy this page:
 - Solidify my CSS Grid knowledge
 - Build a complex page using WCAG recommendations

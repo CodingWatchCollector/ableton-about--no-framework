@@ -5,7 +5,7 @@ Page loading ~isn't blazing fast cause i'm not using different filesizes for ima
 
 [Link to original Ableton site](https://www.ableton.com/en/about/)
 
-# Main reason to copy this page:
+# Main reasons to copy this page:
 - Solidify my CSS Grid knowledge
 - Build a complex page using WCAG recommendations
 - I like the design and I wanted to recreate it

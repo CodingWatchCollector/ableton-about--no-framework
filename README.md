@@ -11,7 +11,7 @@ Page loading ~isn't blazing fast cause i'm not using different filesizes for ima
 - I like the design and I wanted to recreate it
 
 ## What was done:
-- Create responsive dropdown navigation using no scripts/libraries
+- Create responsive dropdown navigation using no external scripts/libraries
 - use accessibility recommendations (aria-expanded on menu button, alt text, different hover and focus state on links, contrast requirements on placeholders, input labels)
 
 ## My personal touch and some fixes of the original page:

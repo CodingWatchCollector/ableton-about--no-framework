@@ -1,7 +1,3 @@
-/* TODO:
-1. refactor links, images, fonts loading, etc. if using NextJS/Gatsby
-*/
-
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap');
 
 :root {
@@ -63,9 +59,13 @@
 
 *:focus {
   outline-offset: 1px;
-  outline-width: 2px;
+  outline-width: .1em;
   outline-color: currentColor;
   outline-style: solid;
+}
+
+*:focus:not(:focus-visible) {
+  outline: none;
 }
 
 html {
@@ -353,6 +353,9 @@ a.is-active:focus {
 
 .focus-visible:focus {
   outline: 2px dotted invert;
+}
+.focus-visible:focus:not(:focus-visible) {
+outline: none;
 }
 
 /* skip to content button */
